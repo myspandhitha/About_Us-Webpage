@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 40px;
+}
+
+/* get to know us */
+.get-to-know {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.get-to-know h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.get-to-know p {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.contact-btn {
+    background: #7a5af5;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #6542d1;
+}
+
+
+.info-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: 250px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Center the last card */
+.info-container.single {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: #d1c4ff;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Testimonial Slider */
+.testimonial-container {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    min-width: calc(100% / 3);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+}
+
+.testimonial p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.stars {
+    color: #f5b50a;
+    margin: 5px 0;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: black;
+}
+
+/* Call to Action Section (Below the Slider) */
+.cta-section {
+    display: flex;
+    align-items: center;
+    background: #f3f4f6;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.cta-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.cta-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background: #7a5af5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #6542d1;
+}
+
+.cta-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.contact-section {
+    display: flex;
+    width: 70%;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 80px;
+}
+
+.contact-button {
+    background: #7a5af5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contact-button:hover {
+    background: #6542d1;
+}
+
+.contact-map {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-map img {
+    width: 100%;
+    border-radius: 10px;
+}
+.newsletter-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.newsletter-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.newsletter-input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.email-icon {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.newsletter-input {
+    border: none;
+    outline: none;
+    background: none;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.newsletter-button {
+    background: #7a5af5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-button:hover {
+    background: #6542d1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonial {
+        min-width: 100%;
+    }
+
+    .cta-section, .contact-section {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-map {
+        padding: 20px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonial {
+        min-width: 100%;
+    }
+
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-content {
+        padding: 20px;
+    }
+
+    .cta-image {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider & CTA Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="get-to-know">
+        <h2>Get to know us</h2>
+        <p>Incididunt ex irure ad non Lorem culpa fugiat exercitation jfjdb njdbfjd ndhfi tempor quis.</p>
+        <button class="contact-btn">Contact us</button>
+    </section>
+    
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-card">
+                <div class="info-icon"></div>
+                <h3>Overview</h3>
+                <p>India's EV market to grow 49% annually; 5 million jobs by 2030; EV Academy trains top engineers in key EV technologies.</p>
+            </div>
+    
+            <div class="info-card">
+                <div class="info-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1189/1189194.png" alt="Process Icon">
+                </div>
+                <h3>Process</h3>
+                <p>EV Academy: Leading in EV education with global mentors, cutting-edge labs, and high-salary placements for skilled engineers.</p>
+            </div>
+    
+            <div class="info-card">
+                <div class="info-icon"></div>
+                <h3>Values</h3>
+                <p>Discover our renowned PLUS policy: Click here to learn more and see why we lead the industry.</p>
+            </div>
+        </div>
+    
+        <!-- Single centered card -->
+        <div class="info-container single">
+            <div class="info-card">
+                <div class="info-icon"></div>
+                <h3>NewsRoom</h3>
+                <p>Stay ahead with the latest course announcements, industry insights, and news from our acclaimed academy. Visit our newsroom!</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    
+    <!-- Testimonial Slider -->
+    <div class="testimonial-container">
+        <div class="testimonial-wrapper" id="testimonialWrapper">
+            <div class="testimonial">
+                <img src="images/person1.jpg" alt="">
+                <h4>Ashley Robinson</h4>
+                <div class="stars">★★★★★</div>
+                <p>I recently hired a business coach and was highly impressed with their support and expertise.</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/person1.jpg" alt="">
+                <h4>Jay Rutherford</h4>
+                <div class="stars">★★★★★</div>
+                <p>I highly recommend a business coach for anyone starting or growing their business.</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/person1.jpg" alt="">
+                <h4>Sarah Jackson</h4>
+                <div class="stars">★★★★★</div>
+                <p>I hesitated to invest in consulting, but it turned out to be one of my best decisions ever.</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/person1.jpg" alt="">
+                <h4>Michael Lee</h4>
+                <div class="stars">★★★★★</div>
+                <p>Excellent coaching experience! Helped me unlock my true potential.</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/person1.jpg" alt="">
+                <h4>Emma Watson</h4>
+                <div class="stars">★★★★★</div>
+                <p>Great insights and business strategies that transformed my approach.</p>
+            </div>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(0)"></div>
+            <div class="dot" onclick="changeSlide(1)"></div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section (Now BELOW the Slider) -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Interested in connecting for info?</h2>
+            <button class="cta-button">Call Now</button>
+        </div>
+        <div class="cta-image">
+            <img src="images/connect.png" alt="Team Image">
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com">
+    
+            <label for="question">Question</label>
+            <textarea id="question" placeholder="Enter question or feedback"></textarea>
+    
+            <button class="contact-button">Submit</button>
+        </div>
+        <div class="contact-map">
+            <a href="https://www.google.com/maps/place/RVCE+Main+Ground/@12.9250979,77.4974077,877m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae3ee4398c296f:0x90a209c475339ea!8m2!3d12.9250979!4d77.4999826!16s%2Fg%2F11bx460b2g?authuser=0&entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" 
+               target="_blank">
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=12.9250979,77.4974077&zoom=15&size=600x300&maptype=roadmap&markers=color:red%7C12.9250979,77.4974077&key=YOUR_API_KEY" 
+                     alt="Map View of RVCE Main Ground" onerror="this.onerror=null; this.src='fallback-map.jpg';">
+            </a>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <h2>Subscribe to our newsletter</h2>
+        <div class="newsletter-container">
+            <div class="newsletter-input-wrapper">
+                <span class="email-icon">📧</span>
+                <input type="email" placeholder="Input your email" class="newsletter-input">
+            </div>
+            <button class="newsletter-button">Subscribe</button>
+        </div>
+    </section>
+     
+
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
