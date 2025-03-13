@@ -18,6 +18,99 @@ body {
 /* Mission section */
 
 /* our founders section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/s3.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.founders {
+    padding: 30px 20px;
+    position: relative;
+}
+
+.founders-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+/* Founder cards */
+.founder-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    position: relative;
+}
+
+.founder-card img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.founder-image img {
+    width: 200px;
+    top: -20px;
+    
+}
+
+/* Geometric circles */
+.circle {
+    position: absolute;
+    background: #817FF0;
+    border-radius: 50%;
+}
+
+/* Large circles in Founders section */
+.large-circle {
+    width: 40px;
+    height: 40px;
+}
+
+.left {
+    top: -23px;
+    left: 19%;
+}
+
+.right {
+    top: -23px;
+    right: 19%;
+}
+
+/* Small circles in the Mission section */
+.small-circle {
+    width: 25px;
+    height: 25px;
+}
+
+.mission-left {
+    top: -100%;
+    left: 34%;
+}
+
+
+
+/* Mission section */
+.mission {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0;
+    position: relative;
+}
 
 
 
